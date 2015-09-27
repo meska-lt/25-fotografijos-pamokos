@@ -1,4 +1,4 @@
-\documentclass[a4paper]{book}
+\documentclass{book}
 
 \usepackage[utf8]{inputenc}
 \usepackage[L7x]{fontenc}
@@ -6,7 +6,7 @@
 \usepackage[svgnames]{xcolor} % Required to specify font color
 \usepackage{textcomp}
 \usepackage{hyperref}
-\usepackage{fullpage}
+% \usepackage{fullpage}
 \usepackage[shortlabels]{enumitem}
 
 \hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
@@ -14,6 +14,8 @@
 \title{25 fotografijos pamokos}
 \author{V. P. Mikulinas}
 \date{1958}
+
+\addto\captionslithuanian{\renewcommand{\chaptername}{Pamoka}}
 
 \begin{document}
 	\pagenumbering{gobble}% Remove page numbers (and reset to 1)
@@ -23,10 +25,9 @@
 	\maketitle
 
 	\pagebreak
-	\clearpage
+	\cleardoublepage
 	\pagenumbering{arabic}% Arabic page numbers (and reset to 1)
-
-	\setcounter{section}{0}
+	\chapter*{}
 	\section*{Autoriaus žodis}
 		Fotografija labai paplito moksle, technikoje, visuomeniniame gyvenime, buityje. Fototgrafija --- tarybinės spaudos pagalbininkas; į laikraščius ir žurnalus dedamos nuotraukos supažindina skaitytojus su Tėvynės gyvenimu, rodo mūsų liaudies darbą, kultūrą, poilsį, nušviečia užsienio gyvenimą. Fotografijų mėgėjų skaičius mūsų šalyje pasiekė kelis milijonus.
 
@@ -50,9 +51,11 @@
 
 		\textit{Vertėjo pastaba.} Verčiant knygą į lietuvių kalbą, autorius kai kurias teksto vietas pataisė.
 	\part{PAGRINDINĖS FOTOGRAFIJOS ŽINIOS}
-	\section{Pažintis su fotografija}
+	\setcounter{section}{0}
+	\chapter{Pažintis su fotografija}
+	% \section{}
 		\textbf{Fotografinio proceso elementai. --- Fotoaparato konstrukcija. --- Medžiagos fotografijai.}
-		\subsection{Fotografinio proceso elementai}
+		\section*{Fotografinio proceso elementai}
 			Fotografija taip pavadinta, sujungus graikiškus žodžius \textit{photos} (šviesa) ir \textit{grapho} (rašau), ir, išvertus į lietuvių kalbą, reiškia rašymą šviesa, atvaizdų darymą šviesa.
 
 			Šviesos spinduliai, atšokę nuo kokio nors apšviesto daikto ir praėję pro objektyvą, sudaro fotografinės plokštelės (stiklo) arba filmo šviesai jautriame sluoksnyje nematomą \textit{slaptąjį atvaizdą}, kuris po cheminio apdirbimo pavirsta matomu atvaizdu (sudarytu iš atvirkščių tonų) --- \textit{negatyvu}; iš negatyvo daromas ant šviesai jautraus fotografinio popieriaus atspaudas --- \textit{pozityvas}.
@@ -80,5 +83,30 @@
 
 			Nufotografavus kasetė kartu su plokštele nunešama į laboratoriją --- tamsų kambarį, apšviestą tam tikra neaktiniška (neveikiančia plokštelės) šviesa. Jeigu kasetė su plokštele būtų nors akimirką atidaryta paprastoje baltoje šviesoje, šviesai jautrus sluoksnis tuojau pat sugestų (nors akis šio pakitimo ir nepastebės). Dėl to reikia rūpestingai saugoti neišryškintas plošteles nuo dirbtinės ar dienos šviesos.
 
-			\textbf{Plokštelės ryškinimas.}
+			\textbf{Plokštelės ryškinimas.} Atminkite, kad tamsiai raudonoje laboratorijos šviesoje galima apdirbti plokšteles, kurios vazdinamos ``Izoorto'' (ir filmus ``Ortochrom''). Šių plokštelių apdirbimą aprašysime ir toliau.
+
+			Taigi, laboratorijoje, nekenksmingiausioje raudonoje šviesoje, atidaroma kasetė ir išimama plokštelė. Ant jos paviršiaus nematyti jokio atvaizdo: jis kol kas dar nematomas, slaptas, nors fotografuojant, šviesai paveikus, plokštelės fotografiniame sluoksnyje įvyko šiokių tokių pakitimų.
+
+			Kad slaptasis atvaizdas pasidarytų matomas, plokštelė dedama į lėkštą vonelę, į kurią yra įpilta tam tikro tirpalo --- \textit{ryškalo}. Plokštelė vietomis palaipsniuj tamsėja, ant jos pasirodo įvairaus tamsumo juosvai pilkos spalvos vaizdas. Plokštelės šviesai jautrus sluoksnis pakito tose vietose, kurias fotografuojant veikė šviesa. Kuo stipriau veikė šviesa vienas ar kitas plokštelės vietas, tuo labiau jos pakinta ir, vadinasi, tuo labiau patamsėja ryškale. O nuo tamsiųjų fotografuojamojo daikto dalių atšoka į plokštelę maža šviesos, dėl to šios plokštelės vietos  ryškale beveik nepasikeičia, lieka pieniškai gelsvos.
+
+			Slaptojo atvaizdo vertimas matomu vadinamas \textit{ryškinimu}. Ryškinimą reikia baigti, kai visos atvaizdo detalės išryškėja (tam reikia paprastai nuo 4 iki 7 minučių). Jeigu bus ryškinama per ilgai, plokštelė apsitrauks pilkai, apsidengs vualiu.
+
+			Išryškinta plokštelėskaidriai neprasišviečia, yra gelsvo arba rausvo atspalvio ir lieka jautri šviesai. Kad negatyvas pasidarytų visiškai nejautrus šviesai ir skaidrus, kad iš jo vėliau būtų galima spausdinti ant fotografinio popieriaus, jis, paskalautas vandenyje, paneriamas į kitą tirpalą --- \textit{fiksažą}. Iš fiksažo negatyvas išimamas, kai šviesiosios vietos tampa visiškai skaidrios (fiksavimas trunka 10 -- 15 minučių). Po to negatyvas rūpestingai plaunamas vandenyje ir džiovinamas.
+
+			Kaip jau kalbėta, plokštelę ryškinti reikia nekenksmingoje raudonoje šviesoje. Praėjus kelioms minutėms nuo fiksavimo pradžios, laboratorijoje jau galima įžiebti baltą šviesą --- ji plokštelei nebekenkia.
+
+			Ryškinimas ir fiksavimas kartu vadinami \textit{negatyviniu procesu}. Po šio proceso gauname \textit{negatyvą}, kuriame yra fotografuoto daikto atvaizdas, bet su atvirkščiu šviesių ir tamsių vietų išdėstymu: tamsiosios nufotografuoto daikto vietos čia yra šviesios (net ir skaidrios), o šviesiosios daikto vietos čia tamsios (net ir nepermatomos). Negatyvinis atvaizdas yra tarpinis.
+
+			\textbf{Atspaudo ant fotografinio popieriaus darymas.} Galutinis fotografavimo tikslas yra padaryti nufotografuoto daikto teisingų tonų atvaizdą. Tuo tikslu išdžiovintas negatyvas uždedamas ant šviesai jautraus fotografinio popieriaus ir apšviečiamas. Šviesa, praėjusi pro negatyvą, veikia fotografinį popieriaus sluoksnį . Kuo tamsesnės atskiros negatyvo vietos, tuo mažiau šviesos jos praleidžia, ir dėl to po tamsiomis negatyvo vietomis šviesa veikia silpnai, po šviesiomis --- stipriau.
+
+			Fotografijos praktikoje naudojami beveik išimtiniai ryškinamieji fotografiniai popieriai, kuriuose atvaizdas išeina nematomas (slaptas), kaip ir plokštelėje fotografavimo metu. Atvaizdą reikia išryškinti, kad jis pasidarytų matomas --- sudarytas iš tonų, atvirkščių negatyvui, ir atitinkąs fotografuotąjį daiktą. Paskui atspaudas fiksuojamas, plaunamas ir džiovinamas. Šie fotografiniai popieriai apdirbami taip pat kaip ir plokštelės negatyviniame procese, tamsiame kambaryje, bet šviesesnėje --- oranžinėje arba šviesiai raudonoje šviesoje.
+
+			Atspaudas ant fotografinio popieriaus vadinamas \textit{pozityvu}, o jo gavimo iš negatyvo operacijos --- \textit{pozityviniu procesu}.
+
+			Atspaudą ant fotografinio popieriaus galima padaryti ne tik aprašytuoju \textit{kontaktiniu} būdu, kurio atspaudas padaromas tokio pat dydžio kaip ir negatyvas, bet ir \textit{projekciniu} spausdinimo būdu, vadinamuoju \textit{fotografiniu didinimu}. Spausdinant šiuo būdu, padidintas negatyvinis atvaizdas projektuojamas tamsiame kambaryje projekciniu žibintu į šviesai jautrų popierių (panašiai, kaip projektuojamas filmas kine į ekraną).
+
+			Trumpai susipažinę, kaip vyksta pagrindiniai fotografinio proceso etapai, pradėsime nagrinėti smulkiau, praktiškai, kiekvieną iš jų atskirai.
+
+			Ši knyga skirta paprastos juodos-baltos fotografijos procesams. Spalvotosios fotografijos ji neliečia. Daugiasluoksnių spalvotųjų fotografibių medžiagų apdirbimas, ypač spalvotųjų pozityvų darymas ant popieriaus, žymiai sudėtingesnis už atitinkamus juodos-baltos fotografijos procesus. Fotografas mėgėjas gali pereiti prie spalvotosios fotografijos tik po to, kai išmoksta paprasto fotografavimo technikos. O pagal principinę schemą abi fotografijos rūšys yra vienodos.
+		\section*{Fotoaparato konstrukcija}
 \end{document}
