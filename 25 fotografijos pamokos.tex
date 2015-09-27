@@ -8,6 +8,10 @@
 \usepackage{hyperref}
 % \usepackage{fullpage}
 \usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{nicefrac}
 
 \hypersetup{colorlinks, citecolor=black, filecolor=black, linkcolor=black, urlcolor=black}
 
@@ -15,7 +19,12 @@
 \author{V. P. Mikulinas}
 \date{1958}
 
+\renewcommand{\thefigure}{\arabic{figure}}
 \addto\captionslithuanian{\renewcommand{\chaptername}{Pamoka}}
+\addto\captionslithuanian{\renewcommand{\figurename}{pieš.}}
+\captionsetup[figure]{labelformat=simple, labelsep=space}
+
+\graphicspath{ {/} }
 
 \begin{document}
 	\pagenumbering{gobble}% Remove page numbers (and reset to 1)
@@ -81,7 +90,7 @@
 
 			Tas laiko tarpas, kurį projektuojamas į plokštelę atvaizdas, vadinamas \textit{išlaikymu}. Šis laikas būna labai įvairus --- nuo tūkstantųjų sekundės dalių iki kelių minučių --- ir nustatomas iš pradžių pagal tam tikras lenteles, o paskui, fotografui įpratus, --- iš akies.
 
-			Nufotografavus kasetė kartu su plokštele nunešama į laboratoriją --- tamsų kambarį, apšviestą tam tikra neaktiniška (neveikiančia plokštelės) šviesa. Jeigu kasetė su plokštele būtų nors akimirką atidaryta paprastoje baltoje šviesoje, šviesai jautrus sluoksnis tuojau pat sugestų (nors akis šio pakitimo ir nepastebės). Dėl to reikia rūpestingai saugoti neišryškintas plošteles nuo dirbtinės ar dienos šviesos.
+			Nufotografavus kasetė kartu su plokštele nunešama į laboratoriją --- tamsų kambarį, apšviestą tam tikra neaktiniška (neveikiančia plokštelės) šviesa. Jeigu kasetė su plokštele būtų nors akimirką atidaryta paprastoje baltoje šviesoje, šviesai jautrus sluoksnis tuojau pat sugestų (nors akis šio pakitimo ir nepastebės). Dėl to reikia rūpestingai saugoti neišryškintas plošteles nuo dirbtinės ar dienos šviesos.\\
 
 			\textbf{Plokštelės ryškinimas.} Atminkite, kad tamsiai raudonoje laboratorijos šviesoje galima apdirbti plokšteles, kurios vazdinamos ``Izoorto'' (ir filmus ``Ortochrom''). Šių plokštelių apdirbimą aprašysime ir toliau.
 
@@ -95,7 +104,7 @@
 
 			Kaip jau kalbėta, plokštelę ryškinti reikia nekenksmingoje raudonoje šviesoje. Praėjus kelioms minutėms nuo fiksavimo pradžios, laboratorijoje jau galima įžiebti baltą šviesą --- ji plokštelei nebekenkia.
 
-			Ryškinimas ir fiksavimas kartu vadinami \textit{negatyviniu procesu}. Po šio proceso gauname \textit{negatyvą}, kuriame yra fotografuoto daikto atvaizdas, bet su atvirkščiu šviesių ir tamsių vietų išdėstymu: tamsiosios nufotografuoto daikto vietos čia yra šviesios (net ir skaidrios), o šviesiosios daikto vietos čia tamsios (net ir nepermatomos). Negatyvinis atvaizdas yra tarpinis.
+			Ryškinimas ir fiksavimas kartu vadinami \textit{negatyviniu procesu}. Po šio proceso gauname \textit{negatyvą}, kuriame yra fotografuoto daikto atvaizdas, bet su atvirkščiu šviesių ir tamsių vietų išdėstymu: tamsiosios nufotografuoto daikto vietos čia yra šviesios (net ir skaidrios), o šviesiosios daikto vietos čia tamsios (net ir nepermatomos). Negatyvinis atvaizdas yra tarpinis.\\
 
 			\textbf{Atspaudo ant fotografinio popieriaus darymas.} Galutinis fotografavimo tikslas yra padaryti nufotografuoto daikto teisingų tonų atvaizdą. Tuo tikslu išdžiovintas negatyvas uždedamas ant šviesai jautraus fotografinio popieriaus ir apšviečiamas. Šviesa, praėjusi pro negatyvą, veikia fotografinį popieriaus sluoksnį . Kuo tamsesnės atskiros negatyvo vietos, tuo mažiau šviesos jos praleidžia, ir dėl to po tamsiomis negatyvo vietomis šviesa veikia silpnai, po šviesiomis --- stipriau.
 
@@ -117,4 +126,58 @@
 
 				Būtinas fotoaparato priedas yra kasetė (arba kitoks prietaisas jautriajai fotografinei medžiagai įdėti).
 				\subsubsection*{Kamera}
+					Kamera, paprastai kalbant, yra šviesos nepraleidžianti dėžutė, kurios vienoje sienelėje įtvirtintas objektyvas, o priešingoje sienelėje įtaisoma šviesai jautri medžiaga (1 pieš.).
+					\begin{figure}[h]
+						\centering
+						\includegraphics[width=0.8\textwidth]{1-pav}
+						\caption{Pirmojo pardavinėjimui skirto fotoaparato pjūvis (Dager, 1839 m. Nuo to laiko kameros schema nepasikeitė)}
+						\label{fig:1}
+					\end{figure}
+					Kamera turi apsaugoti fotografinę plokštelę arba filmą nuo bet kokios pašalinės šviesos. Fotoaparatų kameros arba korpusai būna: a) standūs, dėžutės tipo (``Liubitel''); b) standūs kompaktiški su ištraukiamu objektyvu (FED, ``Zorkij'', ``Kijev''); c) su sustumiamomis dumplėmis, siaurėjančiomis (``Fotokor'', ``Moskva'') arba vienodo skerspjūvio (štatyvinės kameros), panašiomis į armonikos dumples.
+
+					Konstruktoriai stengiasi padaryti tokią kamerą, kuri suglausta užimtų kuo mažiau vietos.
+				\subsubsection*{Objektyvas}
+					Svarbiausia fotoaparato dalis --- objektyvas. Tai yra optinis prietaisas, projektuojąs į plokštelę arba filmą fotografuojamojo daikto šviesinį atvaizdą.
+					\begin{wrapfigure}{r}{0.33\textwidth}
+						\centering
+						\includegraphics[width=0.33\textwidth]{2-pav}
+						\caption{Pusiau suklijuoto keturių lęšių anastigmato ``Industar'' konstrukcinė schema}
+						\label{fig:2}
+					\end{wrapfigure}
+					Paprastas surenkamas lęšis (didinamasis stiklas) duoda pasklidą, neryškų atvaizdą. Dėl to objektyvai, kurie dabar naudojami fotografijoje, paprastai yra sudaryti iš kelių (nuo trijų iki aštuonių) lęšių, kurių iškilumas arba įdubimas (kreivumo spinduliai) ir stiklo sudėtis tiksliai apskaičiuoti ir išlaikyti gaminant. Gretimi lęšiai atskiriami oro tarpu arba suklijuojami. Tokie tobuli objektyvai vadinami \textit{anastigmatais}; jie duoda aiškų ir ryškų atvaizdą. Visuose mūsų šalyje gaminamuose fotoaparatuose įstatyti anastigmatai (2 pieš.).
+
+					Objektyvas montuojamas įtvare, atitinkančiame kamerą, kuriai jis skirtas. Aparatų su centriniu užraktu objektyvai įmontuoti įtvare, kuris sujungtas su užraktu; mažojo formato aparatų objektyvai --- dvigubame įtvare su sriegiais, kurių dėka objektyvą galima pastumti (sukant) išilgai optinės ašies ir tuo nustatyti atvaizdo ryškumą; štatyvinių kamerų objektyvų įtvarai vadinami normaliais įtvarais.
+
+					Ant objektyvo įtvaro išgraviruota: vienos ar kitos rūšies objektyvo pavadinimas, jo židinio nuotolis ir santykinė anga (šviesos stiprumas), o kai kada ir gaminusio fabriko markė bei eilės numeris. Ten pat arba ant centrinio užrakto įtvaro padaryta diafragmų skalė, o daugumoje šiuolaikinių objektyvų --- ir atstumų skalė bei ryškumo zonos skalė.
+
+					Židinio nuotolis ir santykinė anga yra pagrindiniai objektyvą apibūdinantieji duomenys.\\
+				
+					\textbf{Židinio nuotolis.} Židinio nuotoliu (pagrindiniu) vadinamas atstumas tarp objektyvo optinio centro ir plošktelės (arba filmo), kai ryškiai nustatytas labai tolimo daikto atvaizdas. Jeigu objektyvas nustatytas taip, kad labai tolimų daiktų (pavyzdžiui, trobesio ir kt., esančių ne arčiau kaip už 100 \textit{m} nuo aparato) atvaizdas matiniame stikle išeina ryškus (tai vadinama ryškumo nustatymu begalybei), tai atsumas tarp objektyvo diafragmos plokštumos ir matinio stiklo yra lygus to objektyvo židinio nuotoliui\footnote{Tai galioja objektyvams, kurių diafragmos plokštuma eina per optinį centrą. Daugumai objektyvų tas atstumas tik apytikriai bus lygus objektyvo židinio nuotoliui. Teleobjektyvams šios taisyklės taikyti negalima.}. Kiekvieno objektyvo židinio nuotolis --- tai tas mažiausias atstumas nuo jo optinio centro iki plokštelės, kuriuo tegalima gauti ryškų atvaizdą. Fotografuojant arčiau esančius daiktus, atstumą tarp objektyvo ir plokštelės tenka padidinti; norint daiktą nufotografuoti natūralaus didumo (neperžengiant aparato plokštelės dydžio ribų), reikėtų dumples ištempti dvigubu objektyvo židinio nuotolio dydžiu --- reikėtų panaudoti \textit{dvigubo ilgio} dumples. Iš mūsų šalyje masiškai gaminamų fotoaparatų tiktai ``Fotokor'' turi dvigubo ilgio dumples; dėl to kitais aparatais negalima fotografuoti labai arti (arčiau kaip už 1,3 -- 1,5 \textit{m}) esančių daiktų, nepanaudojus papildomų prietaisų.
+
+					Židinio nuotolis išreiškiamas centimetrais (arba milimetrais). Nuo jo dydžio priklauso objektyvo šviesos stiprumas ir ryškiai atvaizduojamos erdvės zona, daiktų atvaizdų mastelis ir, be to, kiekvienai objektyvo konstrukcijai --- didžiausias plokštelės arba filmo formatas, kuriuo galima padaryti iki kraštų ryškų atvaizdą.
+
+					Fotografuojant iš to paties taško, objektyvas su trumpu židinio nuotoliu duoda mažo formato atvaizdą smulkiu masteliu, objektyvas su ilgu židinio nuotoliu duoda didelio formato atvaizdą stambiu masteliu. Atvaizdų mastelis yra tiesiog proporcingas židinių nuotoliams.
+
+					Normaliais židinių nuotoliais laikomi: $9 \times 12 cm$ negatyvui --- 13,5 centimetro; $6 \times 9 cm$ negatyvui --- 11 centimetrų; $6 \times 6 cm$ negatyvui --- 7,5 centimetro; mažojo formato negatyvui ($24 \times 36 mm$) --- 5 centimetrai.\\
+
+					\textbf{Santykinė anga (geometrinis šviesos stiprumas).} Objektyvo šviesos stiprumu vadinama jo galia apšviesti vienokiu ar kitokiu stiprumu kameroje esančios fotografinės medžiagos šviesai jautrų sluoksnį. Šviesos stiprumo dydžio reikšmė didelė: kuo didesnis objektyvo šviesos stiprumas, tuo mažesnio išlaikymo (plokštelės arba filmo apšvietimo laiko) reikia fotografuojant.
+
+					Suprantama, kad objektyvas su didele anga praleidžia daugiau šviesos negu objektyvas su maža anga. Tačiau absoliutus objektyvo skersmens dydis dar nieko nenuliame. Iš tikrųjų: jeigu palyginsime objektyvą su langu, pro kurį į tamsią patalpą (kamerą) patenka šviesa, tai nesunkiai įsitikinsime, kad bet kuris daiktas (plokštelė arba fimas) bus apšviestas tuo stipriau, kuo didesnis pats langas ir kuo arčiau yra tas daiktas.
+
+					Vadinasi, objektyvo šviesos stiprumas priklauso nuo dviejų dydžių: nuo angos dydžio ir nuo židinio nuotolio. Objektyvo šviesos stiprumas tuo didesnis, kuo didesnė jo anga ir kuo trumpesnis jo židinio nuotolis.
+
+					Šis ryšys išreiškiamas \textit{santykinės angos} dydžiu, kuris yra santykis tarp pilnos objektyvo veikančiosios angos\footnote{Pilna veikiančiąja anga vadinama didžiausia objektyvo anga (įeinamasis vyzdys), pro kurią praeina šviesos spindulių pluoštas; ji paprastai lygi pirmajam lęšiui arba kiek mažesnė už jį (išimtis --- plačiakampiai objektyvai).} skersmens ir jo pagrindinio židinio nuotolio (žinoma, abu dydžiai imami vienodais ilgio vienetais). Pavyzdžiui, angos skersmuo ($2 cm$) sutinka su židinio nuotoliu ($8 cm$) kaip 2 : 8; po suprastinimo (padalijus santykį iš pirmojo nario dydžio) gaunama 1 : 4 --- tai ir yra santykinės angos skaitinė reikšmė.
+
+					Fotoaparato FED objektyvo pilnos angos skersmuo $14,3 mm$, židinio nuotolis $50 mm$, o padaliję iš pirmojo nario dydžio (14,3), gausime 1 : 3,5.
+
+					Santykinė anga žymima santykiu tarp vieneto ir skaičiaus, rodančio, kiek kartų to objektyvo pilnos angos skersmuo mažesnis už jo židinio nuotolį.
+
+					Šiuolaikiniuose aparatuose būna objektyvai su santykinėmis angomis 1 : 1,5; 1 : 2; 1 : 2,8; 1 : 3,5; 1 : 4; 1 : 4,5; 1 : 6,3. Kuo didesnis antrasis santykio narys, tuo mažesnė pati santykinė anga. Tai suprantama: santykinės angos skaitinė reikšmė yra trupmena. O kadangi \nicefrac{1}{4} yra mažiau už \nicefrac{1}{2}, tai ir santykinė anga 1 : 4 yra mažesnė už angą 1 : 2.
+
+					Objektyvo anga --- tai skritulys; kaip žinome iš geometrijos, skritulių plotai sutinka kaip jų skersmenų kvadratai. Vadinasi, vieno objektyvo šviesos stiprumas sutinka su kito šviesos stiprumu kaip atitinkamų santykių angų skersmenų kvadratai. Tačiau yra paprastesnis būdas nustatyti, kiek kartų vieno objektyvo šviesos stiprumas didesnis už antrojo: didesnįjį dviejų santykinių angų vardiklį reikia padalyti iš mažesniojo vardiklio ir gautą dalmenį pakelti kvadratu (padauginti patį iš savęs). Pavyzdys: sulyginamas šviesos stiprumas objektyvų, kurių santykinės angos 1 : 4,5 ir 1 : 1,5.
+					\[
+						(4,5 : 1,5)^{2} = 3^{2} = 9.
+					\]
+
+					Vadinasi, antrojo objektyvo šviesos stiprumas yra 9 kartus didesnis už pirmojo, ir, kai anga visa atidaryta, viendomis fotografavimo sąlygomis antrajam objektyvui reikia 9 kartus mažesnio išlaikymo (suapvalinus, pavyzdžiui, \nicefrac{1}{100} sekundės vietoj \nicefrac{1}{10} sekundės).
 \end{document}
