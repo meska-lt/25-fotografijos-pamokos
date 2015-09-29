@@ -1,12 +1,11 @@
 \documentclass{book}
 
-\usepackage[utf8]{inputenc}
 \usepackage[T2A,L7x]{fontenc}
-\usepackage[lithuanian,russian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian,lithuanian]{babel}
 \usepackage[svgnames]{xcolor} % Required to specify font color
 \usepackage{textcomp}
 \usepackage{hyperref}
-% \usepackage{fullpage}
 \usepackage[shortlabels]{enumitem}
 \usepackage{graphicx}
 \usepackage{wrapfig}
@@ -21,9 +20,9 @@
 \date{1958}
 
 \renewcommand{\thefigure}{\arabic{figure}}
-\addto\captionsrussian{\renewcommand{\partname}{Dalis}}
-\addto\captionsrussian{\renewcommand{\chaptername}{Pamoka}}
-\addto\captionsrussian{\renewcommand{\figurename}{pieš.}}
+% \addto\captionslithuanian{\renewcommand{\partname}{Dalis}}
+\addto\captionslithuanian{\renewcommand{\chaptername}{Pamoka}}
+\addto\captionslithuanian{\renewcommand{\figurename}{pieš.}}
 \captionsetup[figure]{labelformat=simple, labelsep=space}
 
 \graphicspath{ {/} }
@@ -266,7 +265,7 @@
 
 					Kaip pavyzdį išnagrinėsime, kaip veikia centrinis užraktas ``Moment'' (6 pieš.), kuris įtaisomas fotoaparatuose ``Moskva''. Patogiausia jo darbą stebėti ant aparato ``Moskva 3'' matinio stiklo.
 
-					Atidarę aparatą, atlenkiame stogelį, esantį už matinio stiklo. Jeigu dabar nukreipsime objektyvą į apšviestą langą, tai ant matinio stiklo dar nieko nepamatysime, nes užraktas uždarytas. Norint atidaryti užraktą, reikia iš pradžių pasukti žiedą --- išlaikymo reguliatorių taip, kad raidė \textit{Д} atsidurtų ties rodykle viršutinėje užrakto dalyje; nuspaudus užrakto svirtelę (arba mygtukinę žarnelę), užraktas atsidaro.
+					Atidarę aparatą, atlenkiame stogelį, esantį už matinio stiklo. Jeigu dabar nukreipsime objektyvą į apšviestą langą, tai ant matinio stiklo dar nieko nepamatysime, nes užraktas uždarytas. Norint atidaryti užraktą, reikia iš pradžių pasukti žiedą --- išlaikymo reguliatorių taip, kad raidė \textit{\foreignlanguage{russian}{Д}} atsidurtų ties rodykle viršutinėje užrakto dalyje; nuspaudus užrakto svirtelę (arba mygtukinę žarnelę), užraktas atsidaro.
 
 					Jeigu dabar, atleidę svirtelę, nukreipsime objektyvą į langą, tai kameros matinis stiklas nušvis.
 					\begin{figure}[h]
@@ -275,7 +274,7 @@
 						\caption{Centrinis užraktas ``Moment''}
 						\label{fig:6}
 					\end{figure}
-					Jeigu vėl paspausime užrakto svirtelę, užraktas užsidarys, ir matinis stiklas vėl pasidarys tamsus. Tokiu būdu, kai reguliatorius nustatytas ties raide \textit{Д}, pirmuoju svirtelės paspaudimu užraktas atidaromas, antruoju paspaudimu --- uždaromas. Taip užraktas nustatomas, fotografuojant ilgu išlaikymu (ilgesniu kaip 5 sekundžių).
+					Jeigu vėl paspausime užrakto svirtelę, užraktas užsidarys, ir matinis stiklas vėl pasidarys tamsus. Tokiu būdu, kai reguliatorius nustatytas ties raide \textit{\foreignlanguage{russian}{Д}}, pirmuoju svirtelės paspaudimu užraktas atidaromas, antruoju paspaudimu --- uždaromas. Taip užraktas nustatomas, fotografuojant ilgu išlaikymu (ilgesniu kaip 5 sekundžių).
 
 					Jeigu ties rodykle nustatysime išlaikymo reguliatoriaus raidę \textit{B}, tai atvaizdas ant matinio stiklo bus matomas tik tol, kol užrakto svirtelė laikoma nuspausta. Kai tik jūs atleisite svirtelę, užraktas užsidarys. Taip užraktas nustatomas, fotografuojant trumpesniu išlaikymu (nuo 1 iki 5 sekundžių).
 
@@ -285,7 +284,7 @@
 						\begin{tabular}{c|c}
 							\hline
 							Reguliatoriaus išlaikymas & Naudojimas ir veikimas \\ \hline
-							Д & \textbf{Nustatant ryškumą pagal matinį stiklą. Fotografuojant ilgu išlaikymu (ilgesniu kaip 5 sekundės)} \par Pirmą kartą paspaudus užrakto svirtelę (arba mygtukinę žarnelę), užraktas atsidaro ir lieka atviras tol, kol užrakto svirtelė paspaudžiama pakartotinai \\ \hline
+							\foreignlanguage{russian}{\foreignlanguage{russian}{Д}} & \textbf{Nustatant ryškumą pagal matinį stiklą. Fotografuojant ilgu išlaikymu (ilgesniu kaip 5 sekundės)} \par Pirmą kartą paspaudus užrakto svirtelę (arba mygtukinę žarnelę), užraktas atsidaro ir lieka atviras tol, kol užrakto svirtelė paspaudžiama pakartotinai \\ \hline
 							B & \textbf{Fotografuojant trumpu išlaikymu (nuo 1 iki 5 sekundžių)} \par Užraktas atviras tol, kol laikoma nuspausta užrakto svirtelė. Atleidus svirtelę, užraktas užsidaro. \\ \hline
 							1, 2, 5, 10, 25, 50, 100, 250 & \textbf{Fotografuojant užrakto automatiškai reguliuojamu išlaikymu} \par \textit{Nustačius išlaikymo reguliatorių, užraktą reikia prisukti} \par Paspaudus užrakto svirtelę, užraktas atsidaro ir po atitinkamos sekundės dalies (1 sekundė, \nicefrac{1}{2}, \nicefrac{1}{5}, \nicefrac{1}{10}, \nicefrac{1}{25}, \nicefrac{1}{50}, \nicefrac{1}{100} arba \nicefrac{1}{250} sekundės) automatiškai užsidaro \\
 						\end{tabular}
@@ -293,9 +292,9 @@
 
 					Fotografuojant nuo štatyvo (tai būtina, kai išlaikymas ilgesnis kaip \nicefrac{1}{20} sekundės), užraktą reikia paleisti, paspaudžiant mygtukinę žarnelę, įsukamą į užrakto mygtuko skylutę.
 
-					Filminių fotoaparatų centriniuose užraktuose nėra padalos \textit{Д} (kad pro atvirą objektyvą atsitiktinai nepatektų šviesos į pervniotą filminę juostelę).
+					Filminių fotoaparatų centriniuose užraktuose nėra padalos \textit{\foreignlanguage{russian}{Д}} (kad pro atvirą objektyvą atsitiktinai nepatektų šviesos į pervniotą filminę juostelę).
 
-					Mažojo formato aparatų užuolaidiniuose užraktuose padalos \textit{Д} taip pat nėra (išimtis --- ``Zorkij 3''); senuose aparato FED modeliuose padalą \textit{B} atstoja padala \textit{Z}.
+					Mažojo formato aparatų užuolaidiniuose užraktuose padalos \textit{\foreignlanguage{russian}{Д}} taip pat nėra (išimtis --- ``Zorkij 3''); senuose aparato FED modeliuose padalą \textit{B} atstoja padala \textit{Z}.
 
 					Kad nesugestų mechanizmai, išlaikymą keisti reikia tiktai tada, kai centrinis užraktas neužvestas ir kai užuolaidinis užraktas prisuktas.
 
@@ -403,7 +402,7 @@
 				\subsubsection*{Negatyvinės medžiagos}
 					Fotografinės plokštelės ir filmai (filmo juostelės) skiriasi jautrumu šviesai, kontrastiškumu, spektriniu jautrumu; šios jų savybės pažymimos ant pakelių.
 
-					\textit{Jautrumas šviesai} (jautrumas baltos šviesos poveikiui) --- svarbiausia negatyvinių medžiagų savybė: kuo jautrumas didesnis, tuo trumpesnio išlaikymo reikia fotografuojant. Mūsų šalyje gaminamų fotografinių medžiagų jautrumas šviesai išreiškiamas GOST\footnote{ГОСТ --- Государственный общесоюзный стандарт (Valstybininis visasąjunginis standartas).} vienetais. GOST vienetų skaičius tiesiog proporcingas jautrumui: dukart didesnis skaičius reiškia, kad ir jautrumas šviesai dukart didesnis\footnote{Vokiškų fotografinių medžiagų jautrumas šviesai žymimas DIN laipsniais (DIN --- Deutche Industrie Norm). Pagal šią sistemą jautrumas du kartus padidėja (arba sumažėja) kas 3\degree: filmas, kurio jautrumas 18\degree DIN, yra dukart jautresnis už 15\degree DIN filmą (į vardiklį 10, esantį po skaitine laipsnių reikšme, dėmesio nekreipkite --- nuo jo jautrumas šviesai nepriklauso).}.
+					\textit{Jautrumas šviesai} (jautrumas baltos šviesos poveikiui) --- svarbiausia negatyvinių medžiagų savybė: kuo jautrumas didesnis, tuo trumpesnio išlaikymo reikia fotografuojant. Mūsų šalyje gaminamų fotografinių medžiagų jautrumas šviesai išreiškiamas GOST\footnote{\begin{otherlanguage*}{russian}ГОСТ --- Государственный общесоюзный стандарт\end{otherlanguage*} (Valstybininis visasąjunginis standartas).} vienetais. GOST vienetų skaičius tiesiog proporcingas jautrumui: dukart didesnis skaičius reiškia, kad ir jautrumas šviesai dukart didesnis\footnote{Vokiškų fotografinių medžiagų jautrumas šviesai žymimas DIN laipsniais (DIN --- Deutche Industrie Norm). Pagal šią sistemą jautrumas du kartus padidėja (arba sumažėja) kas 3\degree: filmas, kurio jautrumas 18\degree DIN, yra dukart jautresnis už 15\degree DIN filmą (į vardiklį 10, esantį po skaitine laipsnių reikšme, dėmesio nekreipkite --- nuo jo jautrumas šviesai nepriklauso).}.
 
 					Pradedančiajam fotografui mėgėjui, fotografuojančiam palankiomis šviesos sąlygomis, geriau naudoti mažo jautrumo (11 -- 16 GOST vienetų), nedidelio (22 -- 32 GOST vien.) ir vidutinio jautrumo (45 -- 65 GOST vien.) negatyvines medžiagas. Didelio jautrumo fotografinės medžiagos imamos tik tais atvejais, kai šviesos sąlygos nepalankios: kai ūkanotą dieną fotografuojami greitai judantieji objektai, kai daromos momentinės nuotraukos patalpoje. Bet pradedančiajam tokias nuotraukas daryti dar ne laikas.
 
